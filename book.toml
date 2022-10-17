@@ -1,0 +1,11 @@
+[book]
+authors = ["Tom Kunc"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Nom Guide (Nominomicon)"
+
+[preprocessor.keeper]
+command = "/home/tfpk/code/Rust/mdbook-keeper/target/debug/mdbook-keeper"
+target_dir = "/home/tfpk/code/Projects/nom/target"
+manifest_dir = "/home/tfpk/code/Projects/nom/"
