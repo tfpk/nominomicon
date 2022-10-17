@@ -6,5 +6,5 @@ src = "src"
 title = "The Nom Guide (Nominomicon)"
 
 [preprocessor.keeper]
-externs = ["mdbook"]
+externs = ["nom"]
 manifest_dir = "doctest_manifest"

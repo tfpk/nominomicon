@@ -13,8 +13,7 @@ either being used.
 
 Nom gives us a similar ability through the `alt()` combinator.
 
-```rust
-# extern crate nom;
+```rust,ignore
 use nom::branch::alt;
 ```
 
@@ -85,8 +84,7 @@ combinators to do it. The simplest of these is `tuple()`. The `tuple()` combinat
 and either returns `Ok` with a tuple of all of their successful parses, or it 
 returns the `Err` of the first failed parser.
 
-```rust
-# extern crate nom;
+```rust,ignore
 use nom::sequence::tuple;
 ```
 
@@ -121,7 +119,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let (remaining, parsed) = parse_pair("aTcG")?;
     assert_eq!(parsed, ("a", "T"));
     assert_eq!(remaining, "cG");
-    
+ 
     assert!(parse_pair("Dct").is_err());
 
 #   Ok(())

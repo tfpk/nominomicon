@@ -34,8 +34,7 @@ of the output, whereas the `Err` variant stores an error.
 
 You can import that from:
 
-```rust
-# extern crate nom;
+```rust,ignore
 use nom::IResult;
 ```
 
@@ -55,7 +54,6 @@ This parser should take in an `&str`:
 
 
 ```rust
-# extern crate nom;
 # use nom::IResult;
 # use std::error::Error;
 
